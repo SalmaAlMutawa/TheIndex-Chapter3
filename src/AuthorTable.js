@@ -12,7 +12,12 @@ class AuthorTable extends Component {
           <td>
             {this.props.auth.first_name} {this.props.auth.last_name}
           </td>
-          <td>{this.props.book.color}</td>
+          <td>
+            <button
+              className="btn"
+              style={{ backgroundColor: this.props.book.color }}
+            />
+          </td>
         </tr>
       </tbody>
     );
